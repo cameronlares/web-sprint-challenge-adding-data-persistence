@@ -48,13 +48,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain the difference between `Relational Databases` and `SQL`.
 
+A Relational Database Management System (RDBMS) is a platform to create and manage databases
+
+SQL is a language used to access and control RDBMSs. Pretty much all RDBMSs accept instructions in SQL, although the SQL they accept differs in small details. You can use SQL to set up databases and modify them, as well as accessing them.
+
 2. Why do tables need a `primary key`?
+The values that compose a primary key column are unique
+
 
 3. What is the name given to a table column that references the primary key on another table.
 
-4. What do we need in order to have a _many to many_ relationship between two tables.
+Foreign Key
+
+4. What do we need in order to have a _many to many_ relationship between two tables. Join Table
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
+
+
 
 ## Instructions
 
