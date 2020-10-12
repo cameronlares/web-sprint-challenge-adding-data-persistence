@@ -28,7 +28,7 @@ function resourceAdd(resourceData) {
     .insert(resourceData, "id")
     .then(ids => {
         const id = ids[0]
-        return findById(id)
+        return resourceFindById(id)
     })
 }
 function resourceUpdate (changes, id) {

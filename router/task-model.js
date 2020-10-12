@@ -16,7 +16,7 @@ function taskFind() {
 }
 
 function taskFindById(id) { // Find resource post by ID
-    return db('resource').where({id}).first();
+    return db('task').where({id}).first();
 }
 
 function taskPosts(id) {
@@ -24,11 +24,11 @@ function taskPosts(id) {
 }
 
 function taskAdd(taskData) {
-    return db('resource')
+    return db('task')
     .insert(taskData, "id")
     .then(ids => {
         const id = ids[0]
-        return findById(id)
+        return taskFindById(id)
     })
 }
 function taskUpdate (changes, id) {
